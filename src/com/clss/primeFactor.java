@@ -1,5 +1,6 @@
 package com.clss;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,9 +10,9 @@ import java.util.List;
 public class primeFactor {
      List<Integer> multiplicadores = new ArrayList<Integer>();
 
-    public ArrayList<Integer> generate(int numero){
+    public List<Integer> generate(int numero){
 
-        return null;
+        return multiplicadores;
     }
 
 }

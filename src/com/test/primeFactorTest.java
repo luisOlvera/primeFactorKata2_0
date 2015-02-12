@@ -17,11 +17,9 @@ public class primeFactorTest {
     public void setUp() throws Exception {
 
     }
+
     @Test
     public  void primeFactor ()throws Exception {
-
-
         Assert.assertEquals(multiplicadores,primeFactorClss.generate(1));
-
     }
 }
