@@ -20,8 +20,14 @@ public class primeFactorTest {
     }
 
     @Test
-    public  void primeFactor ()throws Exception {
+    public  void numero1_resultado1 ()throws Exception {
         multiplicadores.add(1);
         Assert.assertEquals(multiplicadores,primeFactorClss.generate(1));
+    }
+
+    @Test
+    public  void numero2_resultado2 ()throws Exception {
+        multiplicadores.add(2);
+        Assert.assertEquals(multiplicadores,primeFactorClss.generate(2));
     }
 }
