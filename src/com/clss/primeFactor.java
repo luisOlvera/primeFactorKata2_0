@@ -15,17 +15,10 @@ public class primeFactor {
             multiplicadores.add(1);
         else
         {
-            int divisor=2;
-            while ( divisor<=numero)
-            {
-                if (numero%divisor==0)
-                {
-                    multiplicadores.add(divisor);
-                    numero/=divisor;
-                }
-                else
-                    divisor++;
-            }
+
+            for ( int divisor=2 ; numero>1;divisor++)
+            for ( ;numero % divisor == 0 ; numero /= divisor )
+                multiplicadores.add(divisor);
         }
 
         return multiplicadores;
