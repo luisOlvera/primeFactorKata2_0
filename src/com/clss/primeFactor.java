@@ -9,9 +9,9 @@ import java.util.List;
 public class primeFactor {
      List<Integer> multiplicadores = new ArrayList<Integer>();
 
-    private void generate(int numero){
+    public ArrayList<Integer> generate(int numero){
 
-
+        return null;
     }
 
 }
