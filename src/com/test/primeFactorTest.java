@@ -21,13 +21,33 @@ public class primeFactorTest {
 
     @Test
     public  void numero1_resultado1 ()throws Exception {
-        multiplicadores.add(1);
-        Assert.assertEquals(multiplicadores,primeFactorClss.generate(1));
+        assertEquals(addlist(1), 1);
+
     }
 
     @Test
     public  void numero2_resultado2 ()throws Exception {
-        multiplicadores.add(2);
-        Assert.assertEquals(multiplicadores,primeFactorClss.generate(2));
+        assertEquals(addlist(2),2);
+    }
+
+    @Test
+    public  void numero4_resultado2_2 ()throws Exception {
+        assertEquals(addlist(2,2),4);
+
+    }
+
+    @Test
+    public  void numero6_resultado2_3 ()throws Exception {
+        assertEquals(addlist(2,3),6);
+
+    }
+
+    public List<Integer> addlist(int ... operandos){
+        for (int c :operandos)
+            multiplicadores.add(c);
+        return multiplicadores;
+    }
+    public void assertEquals(List<Integer> divisors, int numero ){
+        Assert.assertEquals(divisors, primeFactorClss.generate(numero));
     }
 }

@@ -11,10 +11,23 @@ public class primeFactor {
      List<Integer> multiplicadores = new ArrayList<Integer>();
 
     public List<Integer> generate(int numero){
-        if(numero==1)
+        if(numero<2)
             multiplicadores.add(1);
         else
-            multiplicadores.add(2);
+        {
+            int divisor=2;
+            while ( divisor<=numero)
+            {
+                if (numero%divisor==0)
+                {
+                    multiplicadores.add(divisor);
+                    numero/=divisor;
+                }
+                else
+                    divisor++;
+            }
+        }
+
         return multiplicadores;
     }
 
