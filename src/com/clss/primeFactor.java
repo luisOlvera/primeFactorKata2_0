@@ -11,7 +11,7 @@ public class primeFactor {
      List<Integer> multiplicadores = new ArrayList<Integer>();
 
     public List<Integer> generate(int numero){
-
+        multiplicadores.add(1);
         return multiplicadores;
     }
 
