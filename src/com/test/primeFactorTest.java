@@ -40,13 +40,23 @@ public class primeFactorTest {
     }
 
     @Test
-    public  void numero_resultado2_3 ()throws Exception {
-        assertEquals(addlist(2,3),6);
+    public void numero8_resultado2_2_2()throws Exception {
+        assertEquals(addlist(2,2,2),8);
     }
 
     @Test
-    public void number8_result2_2_2()throws Exception {
-        assertEquals(addlist(2,2,2),8);
+    public  void numero9_resultado3_3 ()throws Exception {
+        assertEquals(addlist(3,3),9);
+    }
+
+    @Test
+    public  void numero12_resultado2_2_3 ()throws Exception {
+        assertEquals(addlist(2,2,3),12);
+    }
+
+    @Test
+    public  void numero15_resultado3_5 ()throws Exception {
+        assertEquals(addlist(3,5),15);
     }
 
     public List<Integer> addlist(int ... operandos){
